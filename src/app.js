@@ -29,7 +29,9 @@ const corsOptions = {
 
 
 
-
+/**
+ * @class App
+ */
 class App {
   constructor(){
     this.app = express();

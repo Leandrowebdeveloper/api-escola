@@ -46,7 +46,7 @@ class LoginController {
     // Gera o tokem jwt
     const token = User.token({ id: user.id, email: user.email });
 
-    return res.status(200).json({ token });
+    return res.status(200).json({ token, user: req.user });
 
 
    } catch (errors) {
